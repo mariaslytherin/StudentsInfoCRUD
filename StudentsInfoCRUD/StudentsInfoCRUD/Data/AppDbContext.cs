@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StudentsInfoCRUD.Data.Entities;
 
 namespace StudentsInfoCRUD.Data
 {
@@ -8,5 +9,7 @@ namespace StudentsInfoCRUD.Data
             : base(options)
         {
         }
+
+        public DbSet<Student> Students { get; set; }
     }
 }
